@@ -1,0 +1,12 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view>
+    <!-- 遍历拿到的已经放进购物车中的商品 -->
+    <scroll-view>
+      <block wx:for="{{cartList}}" wx:key="{{index}}" wx:for-index="index">
+          <my-count-goods goods="{{item}}"   index="{{index}}" bind:CheckClick="checkClick"/>
+      </block>
+    </scroll-view>
+
+  <my-count-bar price="{{totalPrice}}"  counter="{{totalCounter}}"         isCheckedAll="{{isCheckedAll}}"    bind:selectALL="handleCountTotal"/>
+  <!-- <my-count-goods  goods="{{goods}}"  isChecked="{{goods.checked}}"/> -->
+</view> 

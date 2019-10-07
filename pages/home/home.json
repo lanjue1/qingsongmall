@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "my-swiper":"/components/01-swiper/my-swiper",
+    "my-tabstrip":"/components/02-tabstrip/my-tabstrip",
+    "my-goods": "/components/04-goods/my-goods",
+    "my-backtop": "/components/05-backtop/my-backtop"
+  },
+  "navigationBarTitleText": "轻松购",
+  "backgroundColor":"#eee"
+}

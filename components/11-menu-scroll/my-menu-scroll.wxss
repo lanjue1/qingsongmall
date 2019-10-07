@@ -1,0 +1,19 @@
+/* components/11-menu-scroll/my-menu-scroll.wxss */
+.menu-scroll{
+  background-color: #F6F6F6;
+  width: 220rpx;
+  text-align: center;
+  color: #777;
+  height: 100%;
+  position: fixed;
+}
+.menu-item{
+  line-height: 110rpx;
+  
+  }
+.red{
+    border-left: 4rpx solid #ff5777;
+    color: #ff5777;
+    background-color: white;
+    font-weight: bold;
+}

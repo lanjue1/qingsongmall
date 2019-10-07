@@ -1,0 +1,14 @@
+<!--components/06-detail/my-detail-info/my-detail-info.wxml-->
+<view class="detailInfo">
+    <view class="desc">
+        <view class="start line"></view>
+        <view class="infoDesc">{{detailInfo.desc}}</view>
+        <view class="end line"></view>
+    </view>
+
+    <view class="detailImage">
+          <block wx:for="{{detailInfo.detailImage[0].list}}" wx:key="{{index}}">
+            <image src="{{item}}" mode="widthFix"></image>
+          </block>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+<!--components/03-goodsinfor/my-goodsinfor.wxml-->
+<view class="goodsinfor" bindtap="goodsClick">
+      <image class="goodsImage" src="{{item.show.img || item.image||item.img}}" mode="widthFix"></image>
+      <view class="goodsItem">
+          <text class="title">{{item.title}}</text>
+           <view class="goodsCfav">
+                <text class="price">￥{{item.price}}</text>               
+                     <image src="/assets/common/favor.png"  class="icon"></image> 
+                    <text class="cfav">{{item.cfav}}</text>    
+           </view>
+      </view>
+      
+</view> 

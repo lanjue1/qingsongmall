@@ -1,0 +1,22 @@
+<!--components/06-detail/my-bottom-bar/my-bottom-bar.wxml-->
+<view class="bottomBar">
+      <view class="bar-left bar-item">
+            <view class="store left ">
+                <image src="/assets/detail/shop.png"></image>
+                <view>店铺</view>
+            </view>
+            <view class="customer left">
+                <image src="/assets/detail/service.png"></image>
+                <view>客服</view>
+            </view>
+            <view class="collection left">
+                <image src="/assets/detail/collect.png"></image>
+                <view>收藏</view>            
+            </view>
+      </view>
+
+      <view class="bar-right bar-item">
+            <view class="shopcar  right" bindtap="addGoodsTo">加入购物车 </view>
+            <view class="buying  right">立即购买</view>
+      </view>
+</view>

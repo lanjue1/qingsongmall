@@ -1,0 +1,66 @@
+<!--pages/mypro/mypro.wxml-->
+
+<view class="mypro" bindtap="handleToLogin">
+  <view class="my-title">
+    <image class="deffaultimg" src="{{userPhoto}}"></image>
+    <view class="login">
+        <view class="loginRegister">{{Name}}</view>
+        <view class="memberTel">会员等级：0 </view>
+    </view>
+
+  </view>
+
+<view class="my-order">
+    <view class="order-title">
+    <text class="myorder">我的订单</text>
+    <text class="moreOrder">查看更多订单  ></text>
+    </view>
+    <view  class="orderMenu">
+        <view class="orderinfo">
+              <image src="/assets/profile/04-dfk.png"></image>
+              <view>待付款</view>
+        </view>
+        <view class="orderinfo">
+              <image src="/assets/profile/04-dfh.png"></image>
+              <view>待发货</view>
+        </view>
+        <view class="orderinfo">
+              <image src="/assets/profile/04-dsh.png"></image>
+              <view>待收货</view>
+        </view>
+        <view class="orderinfo">
+              <image src="/assets/profile/04-shouhou.png"></image>
+              <view>退款/售后</view>
+        </view>
+    </view>
+</view>    
+
+<view class="my-tools">
+  <view class="tools-item">
+      <image src="/assets/profile/message.png"></image>
+      <text>我的消息</text>
+  </view>
+  <view class="tools-item">
+      <image src="/assets/profile/pointer.png"></image>
+      <text>积分商城</text>
+  </view>
+  <view class="tools-item">
+      <image src="/assets/profile/vip.png"></image>
+      <text>我的优惠券</text>
+  </view>
+</view>
+
+  <view class="my-tools">
+      <view class="tools-item">
+        <image src="/assets/profile/cart.png"></image>
+        <text>我的购物车</text>
+      </view>
+      <view class="tools-item">
+          <image src="/assets/profile/app.png"></image>
+          <text>下载轻松购APP</text>
+      </view>
+  </view>
+
+
+
+</view>

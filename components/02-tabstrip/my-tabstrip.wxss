@@ -1,0 +1,29 @@
+/* components/02-tabstrip/my-tabstrip.wxss */
+
+.tab-strip{
+  display: flex;
+  width: 100%;
+  padding: 20rpx 0;
+}
+.tab-item{
+  flex: 1;
+  color: #555;
+  justify-content: space-between;
+  padding: 0px 46px;
+}
+.tab-item text{
+    margin: 0 auto;
+   text-align: center;
+   align-content: center;
+   display: block;
+}
+
+.active{
+  color: #ff5777
+
+}
+.active text{
+  border-bottom: 4rpx solid #ff5777;
+  padding-bottom: 12rpx;
+  font-weight: bold;
+}

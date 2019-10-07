@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+
+  <view class="login-image" >
+    <image src="/assets/home/login.png" mode="widthFix"></image>
+  </view>
+
+  <view class="login-user">
+      <text>用户名</text>
+      <view class="username"> 
+            <input bindinput="userName"></input>
+      </view>
+
+      <text>密码</text>
+      <view class="password">
+          <input password="true" bindinput="userPassword" cursor=""></input></view>
+      </view>
+        <view class="forgotPass">忘记密码 <text></text></view>
+        <view class="placeholder"></view>
+      <view class="button">
+          <button bindtap="btnClick"   type="primary" class="Button">登录</button>
+      </view>
+  
+  </view>

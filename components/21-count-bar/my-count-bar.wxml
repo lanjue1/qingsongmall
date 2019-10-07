@@ -1,0 +1,11 @@
+<!--components/21-count-bar/my-count-bar.wxml-->
+<view class="count-bar">
+    <view class="all-select">
+        <my-check-icon icon="icon" isChecked="{{isCheckedAll}}" 
+        bindtap="selectAll"/>
+        <text class="text">全选</text>
+    </view>
+
+    <view class="count">合计: ￥{{price}}</view>
+    <view class="settlement" bindtap="handleSettlement"><text>结算({{counter}})</text></view>
+</view>

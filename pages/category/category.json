@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-menu-scroll": "/components/11-menu-scroll/my-menu-scroll",
+    "my-menu-image": "/components/12-menu-image/my-menu-image"
+    
+  }
+}

@@ -1,0 +1,36 @@
+<!--components/06-detail/my-store-store/my-store-store.wxml-->
+
+<view class="store">
+    <view class="storeName">
+        <image src="{{shopInfo.shopLogo}}"></image>
+        <text>{{shopInfo.name}}</text>
+    </view>
+
+    <view class="store-center">
+        <view  class="center-left">
+            <view class="cSells">
+              <text>{{shopInfo.cSells}}</text>
+              <view>总销量</view>
+            </view> 
+            <view class="cGoods">
+              <text>{{shopInfo.cGoods}}</text>
+              <view>全部宝贝</view>
+            </view> 
+        </view>
+        
+
+        <view class="center-right">
+              <block  wx:for="{{shopInfo.score}}" wx:key="{{index}}">
+                    <view class="score-item">
+                          <text class="name">{{item.name}}</text>
+                          <text class="score {{item.isBetter?'red':'green'}}">{{item.score}}</text>
+                          <text class="better {{item.isBetter?'red':'green'}}">{{item.isBetter ?'高':'低'}}</text>
+                    </view>
+              </block>                
+        </view>
+    </view>
+
+  <view  class="Button"><button  class="button">进店逛逛</button>
+  </view>
+
+</view>

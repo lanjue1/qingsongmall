@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-count-number": "/components/06-detail/my-count-number/my-count-number",
+    "my-check-icon": "/components/07-check-icon/my-check-icon"
+  }
+}

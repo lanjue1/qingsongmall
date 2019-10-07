@@ -1,0 +1,48 @@
+/* pages/login/login.wxss */
+
+.login-image{
+  width: 100%;
+text-align: center;
+margin: 60rpx 0 50rpx 0;
+}
+.login-image image{
+  width: 60%;
+  
+  border:1rpx solid white;
+  border-radius: 100%; 
+}
+
+.login-user{
+  padding:0 60rpx
+
+}
+.login-user text{
+  font-size: 36rpx;
+
+}
+.username,.password{
+  line-height: 50rpx;
+  border-bottom: 2rpx solid #eee;
+  margin: 16rpx 0 30rpx 0;
+}
+
+.forgotPass{
+  font-size: 26rpx;
+float: right;
+  padding-right: 60rpx;
+}
+
+.forgotPass text{
+  
+}
+.button{
+margin-top: 30rpx;
+
+}
+.placeholder{
+  height: 40rpx;
+}
+.Button{
+  width: 500rpx;
+  
+}

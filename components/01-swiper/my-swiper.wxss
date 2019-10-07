@@ -1,0 +1,15 @@
+/* components/01-swiper/my-swiper.wxss */
+page{
+  margin: 0 auto;
+  padding: 0
+}
+.swiper{
+  height: 390rpx;
+ display: flex;
+}
+ .swiper-item{
+   flex: 1
+ }
+ .swiper-item image{
+   width: 100%
+ }

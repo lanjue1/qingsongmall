@@ -1,0 +1,85 @@
+/* pages/mypro/mypro.wxss */
+.mypro{
+    background-color: #F8F8F8;
+    
+}
+.my-title{
+  background-color: #ff5777;
+  padding: 30rpx 0 40rpx 30rpx;
+  color: white;
+  display: flex;
+  text-align: center;
+}
+.my-title image{
+  border: 2rpx solid white;
+  border-radius: 100%;
+  width: 150rpx;
+  height: 150rpx;
+  background-color: white;
+  margin-right: 30rpx
+}
+.login{
+  margin-top: 40rpx;
+
+}
+.login .loginRegister{
+  font-size: 36rpx;
+}
+.login .memberTel{
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.my-order{
+  background-color: white;
+  padding-left: 30rpx;
+
+}
+
+.orderMenu image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.orderinfo{
+  
+}
+.my-order{
+  margin: 30rpx 0;
+}
+.order-title{
+  line-height: 76rpx;
+  border-bottom: 2rpx solid #eee;
+
+}
+.myorder{
+  font-weight: bold;
+}
+.moreOrder{
+  float: right;
+  padding-right: 30rpx;
+}
+.orderMenu{
+  display: flex;
+  text-align: center;
+  justify-content:space-evenly;
+  margin: 30rpx 0 30rpx 0;
+  
+}
+.orderMenu view{
+  margin: 20rpx 0;
+}
+
+.my-tools{
+  background-color: white;
+  padding: 30rpx;
+  margin-bottom: 30rpx ;
+  font-size: 34rpx;
+}
+
+.my-tools image{
+  width: 40rpx;
+    height: 40rpx;
+    margin-right: 30rpx;
+}
+.tools-item text{
+line-height: 75rpx;
+}

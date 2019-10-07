@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "my-swiper": "/components/01-swiper/my-swiper",
+    "my-detail-title":"/components/06-detail/my-detail-title/my-detail-title",
+    "my-bottom-bar": "/components/06-detail/my-bottom-bar/my-bottom-bar",
+    "my-store-store": "/components/06-detail/my-store-store/my-store-store",
+    "my-detail-info": "/components/06-detail/my-detail-info/my-detail-info",
+    "my-param-info": "/components/06-detail/my-param-info/my-param-info",
+    "my-comment-info": "/components/06-detail/my-comment-info/my-comment-info",
+    "my-goods-recommend": "/components/06-detail/my-goods-recommend/my-goods-recommend"
+    
+  
+  }
+}

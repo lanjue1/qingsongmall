@@ -1,0 +1,32 @@
+<!--components/06-detail/my-param-info/my-param-info.wxml-->
+<view class="param">
+      <block wx:for="{{itemParams.rule.tables}}" 
+                  wx:for-item="itemx"  
+                  wx:for-index="index"
+                  wx:key="{{index}}">
+          
+          <view class="rule-tables">
+                <block wx:for="{{itemx}}" 
+                            wx:for-item="itemy"
+                            wx:for-index="index"
+                            wx:key="{{index}}">
+                           
+                        <view class="rule-row row">
+                            <block wx:for="{{itemy}}"
+                                        wx:for-item="itemz"
+                                        wx:for-index="index"
+                                        wx:key="{{index}}">
+                                <view class="rule-item">{{itemz}}</view>
+                            </block>
+                        </view>
+                </block>
+          </view>
+      </block>
+
+      <block wx:for="{{itemParams.info.set}}" wx:key="{{index}}">
+            <view class="info-set">
+                  <view class="set-key">{{item.key}}</view>
+                  <view class="set-value">{{item.value}}</view>
+            </view>
+      </block>
+</view>

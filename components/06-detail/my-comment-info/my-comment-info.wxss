@@ -1,0 +1,48 @@
+/* components/06-detail/my-comment-info/my-comment-info.wxss */
+.comment{
+  margin-top: 20rpx ;
+  padding: 50rpx 20rpx;
+  border-top:  6px solid #eee;
+  color: #777;
+}
+.comment-more{
+  font-size: 36rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #F2F2F2;
+}
+.more{
+  float: right;
+  color: #ff5777;
+}
+.user{
+  position: relative;
+  padding: 30rpx 0;
+}
+.user image{
+  width: 60rpx;
+  height: 60rpx;
+  
+  border: 2px solid #eee;
+  border-radius: 100%;
+
+}
+.user text{
+  font-size: 30rpx;
+  color: #777;
+  vertical-align: baseline;
+  position: absolute;
+  bottom: 40rpx;
+  padding-left: 20rpx;
+}
+.user-style{
+  font-size: 26rpx;
+  color: rgb(173, 170, 170);
+
+}
+.content{
+  color: rgb(102, 100, 100);
+  padding-top: 20rpx;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,46 @@
+/* pages/home/home.wxss */
+page{
+  margin: 0 auto;
+  padding: 0
+}
+.recommend{
+  padding : 22rpx  0 ;
+  border-bottom: 8px solid #eee;
+  display: flex
+}
+.recommend-item{
+  flex: 1;
+  justify-content: space-between
+}
+.recommend-item image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 10rpx
+}
+.recommend-item view{
+  color: #555;
+ align-content: center;
+ display: block;
+ text-align: center;
+}
+.recommend-item text{
+  display: block;
+ text-align: center;
+ font-size: 28rpx;
+}
+
+.recommend-image image{
+  width: 100%;
+  border-bottom: 8px solid #eee;
+}
+
+.my-tabstrip{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  border-radius: 10rpx;
+  background-color: white;
+}
+

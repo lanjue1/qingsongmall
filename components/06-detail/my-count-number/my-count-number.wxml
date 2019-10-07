@@ -1,0 +1,6 @@
+<!--components/06-detail/my-count-number/my-count-number.wxml-->
+<view class="addCount">
+            <image src="/assets/common/subtract.png" bindtap="subtract"></image>
+            <text>{{Number}}</text>
+            <image src="/assets/common/add.png" bindtap="add"></image>
+        </view>

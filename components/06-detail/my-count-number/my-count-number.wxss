@@ -1,0 +1,19 @@
+/* components/06-detail/my-count-number/my-count-number.wxss */
+.addCount{
+  margin-left: 50rpx;
+  font-size: 36rpx;
+  color: #ff5777;
+  display: flex;
+  text-align: center;
+  
+  right: 30rpx;
+}
+.addCount text{
+  margin:0 20rpx;
+  width: 40rpx;
+
+}
+.addCount image{
+    width: 40rpx;
+    height: 40rpx
+}

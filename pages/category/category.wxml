@@ -1,0 +1,6 @@
+<!--pages/category/category.wxml-->
+<view class="category">
+    <my-menu-scroll categoryList="{{categoryList}}" bind:menuClick="menuClick" class="category-menu"/>
+    <my-menu-image class="subMenu" cateInfo="{{cateInfo}}"   
+    categoryDetail="{{categoryData}}"/>
+</view>

@@ -1,0 +1,31 @@
+/* components/06-detail/my-param-info/my-param-info.wxss */
+.param{
+  padding: 30rpx 0 40rpx 30rpx;
+  border-top: 6px solid #eee;
+  color: #777777;
+  line-height: 96rpx;
+}
+
+.rule-row,.info-set{
+  display: flex;
+  /* justify-content: center; */
+  border-bottom: 1px solid #F2F2F2;
+  
+}
+.rule-item{
+  flex: 1;
+  text-align: left;
+
+}
+.set-key{
+  width: 160rpx;
+}
+.set-value{
+  flex: 1;
+  color: #ff5777;
+ 
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}

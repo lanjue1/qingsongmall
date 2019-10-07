@@ -1,0 +1,42 @@
+/* components/03-goodsinfor/my-goodsinfor.wxss */
+ .goodsinfor{
+   text-align: center;
+   color: #333;
+   padding: 16rpx 0 85rpx 0;
+   
+}
+.goodsinfor image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.goodsItem{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title{
+  
+  position: relative;
+  font-size: 28rpx;
+}
+
+.goodsCfav{
+  font-size: 26rpx
+} 
+.goodsCfav .price{
+  color: #ff5777;
+}
+.goodsCfav .icon{
+    width: 30rpx;
+    height: 30rpx;
+    padding: 0 6rpx 0 16rpx;
+    position: relative;
+    top:6rpx;
+}
+.cfav{
+  position: relative;
+}

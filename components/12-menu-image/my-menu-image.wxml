@@ -1,0 +1,16 @@
+<!--components/12-menu-image/my-menu-image.wxml-->
+<scroll-view  class='content' scroll-y>
+    <view class="menuSub">
+    <block wx:for="{{cateInfo}}" wx:key="{{index}}">
+        <view class="sub">
+            <image src="{{item.image}}" mode="widthFix"></image>
+            <view>{{item.title}}</view>
+        </view>
+    </block>
+</view>
+
+<!-- 详情数据 -->
+<view>
+<my-goods goods="{{categoryDetail}}"/>
+</view>
+</scroll-view>

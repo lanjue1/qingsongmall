@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-count-bar": "/components/21-count-bar/my-count-bar",
+    "my-count-goods": "/components/22-count-goods/my-count-goods"
+  }
+}

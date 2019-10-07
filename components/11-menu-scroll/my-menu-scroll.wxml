@@ -1,0 +1,13 @@
+<!--components/11-menu-scroll/my-menu-scroll.wxml-->
+
+    <scroll-view  scroll-y class="menu-scroll" enable-back-to-top>
+      
+        <block wx:for="{{categoryList}}"  wx:key="{{index}}">
+            <view class="menu-item {{index==handleStyle?'red':''}}"   
+                        data-index="{{index}}"
+                       bind:tap="handlMenuItem"
+            
+            >{{item.title}}</view>
+        </block>
+    </scroll-view>
+

@@ -1,0 +1,25 @@
+/* components/12-menu-image/my-menu-image.wxss */
+.content{
+  height: 100%;
+  z-index: 10;
+}
+.menuSub{
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding: 40rpx ;
+  color: #777;
+}
+.sub{
+ width: 33.33%;
+   text-align: center;
+
+}
+.sub image{
+  width: 80%;
+  
+  
+}
+.sub view{
+ padding: 36rpx 0;
+}

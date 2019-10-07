@@ -1,0 +1,7 @@
+<!--components/06-detail/my-goods-recommend/my-goods-recommend.wxml-->
+<view class="Grecommend">
+    <view class="header">店铺推荐    </view>
+    <view class="content">
+        <my-goods goods="{{recommends}}"/>
+    </view>
+</view>

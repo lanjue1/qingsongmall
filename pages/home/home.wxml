@@ -1,0 +1,34 @@
+<!--pages/home/home.wxml-->
+<!-- 1.轮播图 -->
+<my-swiper list="{{banners}}"/>
+
+<!-- 2. 中间推荐位 -->
+<view class="recommend">
+    <block wx:for="{{recommend}}" wx:key="{{index}}">
+        <view class="recommend-item">
+            <view >
+              <image src="{{item.image}}"></image>
+              
+                  <text>{{item.title}}</text>
+              </view>
+        </view>
+    </block>
+</view>
+
+<!--3.正中位置  -->
+<view class="recommend-image">
+      <image src="/assets/home/recommend_bg.jpg" mode="widthFix"></image>
+</view>
+
+<!--4.  tabstrip -->
+<my-tabstrip tablist="{{[ '流行', '新款', '精选' ]}}"  bind:itemClick="handletabClick"  class="my-tabstrip" wx:if="{{showToptab}}"/>
+<my-tabstrip tablist="{{[ '流行', '新款', '精选' ]}}"  bind:itemClick="handletabClick" id="pre-tabstrip" wx:if="{{zwTabstrip}}"/>
+
+<!--5. tabstrip商品展示 -->
+<navigator url="/pages/home/goodsdetail/goodsdetail">
+    <my-goods goods="{{goods[currentType].list}}" />
+</navigator>
+
+
+<!-- 6. 回到顶部按钮 -->
+<my-backtop wx:if="{{showbacktop}}" />

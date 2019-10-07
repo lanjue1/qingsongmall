@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-goodsinfor": "/components/03-goodsinfor/my-goodsinfor"
+  }
+}

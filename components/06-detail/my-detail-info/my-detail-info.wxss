@@ -1,0 +1,46 @@
+/* components/06-detail/my-detail-info/my-detail-info.wxss */
+.detailInfo{
+  padding: 30rpx 0;
+  border-top: 6px solid #eee;
+  font-size: 34rpx;
+  color: #777777;
+}
+.desc .line{
+  position: relative;
+}
+.desc {
+  padding:0 20rpx;
+}
+.line{
+  width: 180rpx;
+  height: 2px;
+  background-color: #666666;
+  
+}
+.desc .end{
+  float: right;
+}
+.start::before,.end::after{
+  content: '';
+  width: 10rpx;
+  height: 10rpx;
+  position: absolute;
+  background-color: black;
+}
+.start::before {
+  bottom: 0;
+}
+.end::after {
+  bottom: 0;
+  right: 0;
+}
+.desc .infoDesc{
+  padding: 30rpx 0;
+}
+.detailImage{
+  margin-top: 30rpx;
+  text-align: center;
+}
+.detailImage image{
+  width: 96%;
+}

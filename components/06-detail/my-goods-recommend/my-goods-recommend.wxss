@@ -1,0 +1,11 @@
+/* components/06-detail/my-goods-recommend/my-goods-recommend.wxss */
+.Grecommend{
+  margin-top: 20rpx ;
+  padding: 50rpx 20rpx;
+  border-top:  6px solid #eee;
+  color: #777;
+}
+.header{
+  font-size: 34rpx;
+  padding: 0 0 30rpx 10rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-count-number": "/components/06-detail/my-count-number/my-count-number"
+  }
+}

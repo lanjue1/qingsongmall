@@ -1,0 +1,19 @@
+<!--components/06-detail/my-comment-info/my-comment-info.wxml-->
+<view class="comment">
+    <view class="comment-more">
+        <view class="more">查看全部  ></view>
+        <view>宝贝评价</view>
+        
+    </view>
+
+    <view class="user"> 
+      <image src="{{rate.list[0].user.avatar}}"></image>
+      <text>{{rate.list[0].user.uname}}</text>
+    </view>
+
+    <view class="user-style"> {{rate.list[0].style}} </view>
+    <view class="content"> {{rate.list[0].content}}</view>
+    
+    
+
+</view>

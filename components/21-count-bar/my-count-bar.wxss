@@ -1,0 +1,49 @@
+/* components/21-count-bar/my-count-bar.wxss */
+.count-bar{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  height: 80rpx;
+  background-color: #eee;
+  text-align: center;
+  width: 100%;
+  padding-left:30rpx;
+}
+
+.check-icon{
+  
+   border: 2px solid #aaa; 
+  border-radius: 100%;
+  vertical-align: middle;
+}
+.all-select{
+  margin-top: 20rpx;
+    /* display: flex; */
+    text-align: center
+}
+.all-select .text{
+    padding: 0 50rpx 0 15rpx;
+    
+}
+.count{
+  margin-top: 20rpx;
+  color: rgb(61, 58, 58);
+  font-size: 36rpx;  
+}
+.count text{
+  color: #ff5777;
+  font-size: 28rpx;
+}
+.settlement{
+  width: 180rpx;
+  background-color: #FF3F33;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  position: fixed;
+  right: 0;
+}
+.settlement text{
+  line-height: 80rpx;
+  right: 36rpx;
+}

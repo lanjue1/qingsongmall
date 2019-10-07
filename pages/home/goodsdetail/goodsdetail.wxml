@@ -1,0 +1,46 @@
+<!--pages/home/goodsdetail/goodsdetail.wxml-->
+    
+<my-swiper  list="{{detailBanner}}" class="d-swiper"/>
+<my-detail-title itemInfo="{{itemInfo}}"  columns="{{columns}}" 
+                          services="{{services}}"  bind:addGoodCount="addGoodCount"/>
+<view hidden>{{Count}}</view>
+<!-- 售后服务 -->
+<view class="servers">
+
+    <view class="services-after services-after1 ">
+        <image src="//s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png"></image>
+        <text>全国包邮</text>
+    </view>    
+    <view class="services-after services-after2 ">
+        <image src="//s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png"></image>
+        <text>7天无理由退货</text>
+    </view> 
+    <view class="services-after services-after3 ">
+        <image src="//s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png"></image>
+        <text>72小时发货</text>
+    </view>  
+    <view  class="zero">
+    
+    </view>
+</view>
+<my-bottom-bar bind:addGood="handleAddGood"/>
+
+<!-- 店铺头像和销量信息 -->
+
+<my-store-store shopInfo="{{shopInfo}}" />
+<!-- 参数 -->
+<my-param-info itemParams="{{itemParams}}"/>
+<!-- 评论 -->
+<my-comment-info rate="{{rate}}"/>
+<!-- 商品详情图 -->
+<my-detail-info detailInfo="{{detailInfo}}" />
+
+<!-- 商品推荐-->
+<my-goods-recommend recommends="{{recommends}}"/>
+
+
+
+
+
+
+
