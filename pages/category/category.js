@@ -21,7 +21,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onShow: function (options) {
       // 1.加载分类页面-类别数据
     wx.setNavigationBarTitle({
       title: '商品分类',
@@ -48,9 +48,7 @@ Page({
       //const maitKey = categoryList[currentIndex].maitKey;
      // console.log(categoryList[currentIndex].maitKey); 
       // this._getCategorySub()中要传入的是categoryList[0].maitKey，现在需要拿到categoryList[currentIndex];
-
-      //2. 拿到category 中的maiKey的值      
-
+      //2. 拿到category 中的maiKey的值     
       const categoryData = {}
       //console.log(categoryData)
       for (let i = 0; i < categoryList.length; i++) {
@@ -68,20 +66,20 @@ Page({
         categoryList: categoryList,
         categoryData: categoryData
       });
+      this._getCategorySub(0)
       //console.log(this.data.categoryList[currentIndex])
       //console.log(this.data.currentIndex)
     })
     
-    this._getCategorySub(0)
-
+    
     //this._getCategoryDetail(0)
     this._getCategoryDetail(0,'pop')
   },
 /* 拿到右边页面的分类具体数据 */
   _getCategorySub(currentIndex){
-      setTimeout(()=>{
+
         const maitkey = this.data.categoryList[currentIndex].maitKey;
-       // console.log(this.data.categoryList)
+       // console.log('++++++',this.data.categoryList)
         getCategorySub(maitkey).then(res=>{
                //console.log(res.data)
                const dataList=res.data.data.list
@@ -91,7 +89,7 @@ Page({
               })          
           });
           
-      },400)  
+     
   },
 
   /* _getCategoryDetail(currentIndex, type){

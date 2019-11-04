@@ -2,28 +2,29 @@
 
 .tab-strip{
   display: flex;
-  width: 100%;
-  padding: 20rpx 0;
+  margin-bottom: 16rpx;
 }
 .tab-item{
   flex: 1;
-  color: #555;
-  justify-content: space-between;
-  padding: 0px 46px;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  font-weight: bold;
 }
-.tab-item text{
+/* .tab-item text{
     margin: 0 auto;
    text-align: center;
    align-content: center;
    display: block;
-}
+   
+} */
 
 .active{
   color: #ff5777
 
 }
 .active text{
-  border-bottom: 4rpx solid #ff5777;
-  padding-bottom: 12rpx;
-  font-weight: bold;
+ padding: 16rpx 10rpx;
+  border-bottom: 6rpx solid #ff5777;
 }

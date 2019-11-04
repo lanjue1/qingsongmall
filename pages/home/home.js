@@ -26,10 +26,12 @@ Page({
       this._getMultidata();
     //请求商品数据
     this._getGoodsdata('pop');
+    console.log(this._getGoodsdata('pop'))
     this._getGoodsdata('new');
     this._getGoodsdata('sell');
 
     //console.log(this.data.goods.pop.list)
+    
   },
 
  /*---------------------数据请求-----------  */
@@ -55,7 +57,6 @@ Page({
   _getGoodsdata(type){
       //1.获取页码
       const page=this.data.goods[type].page+1;
-
     getGoodsdata(type,page).then(res=>{
         //console.log(res)
         //2. 取出数据
@@ -67,6 +68,7 @@ Page({
 
         // 4. 将数据设置到data中的list中去
       const oldList = this.data.goods[type].list
+     // console.log(this.data.goods[type])
           oldList.push(...list)
       const typeKey = `goods.${type}.list`
 
@@ -98,21 +100,21 @@ Page({
   
 /* ---获取固定的tabtrip的top高度，当页面滑动到此高度时候显示被吸顶的tabtrip */
   //  1.  在onShow页面展示函数中获取tabtrip距离页面顶部的高度；
-onShow:function(){
-  setTimeout(()=>{
-    var query = wx.createSelectorQuery()//创建节点查询器 query
-    query.select('#pre-tabstrip').boundingClientRect().exec(res => {
-      //console.log(res);
+ onShow:function(){
+   setTimeout(() => {
+     var query = wx.createSelectorQuery()//创建节点查询器 query
+     query.select('#pre-tabstrip').boundingClientRect().exec(res => {
+       //console.log(res);
 
-      this.setData({
-        tabstripTop: res[0].top
+       this.setData({
+         tabstripTop: res[0].top
 
-      });
-      //console.log(this.data.tabstripTop);
-    })
-  },500)
+       });
+       //console.log(this.data.tabstripTop);
+     })
+   }, 500)
     
-},
+}, 
 //  2. 监听页面滚动距离scrollTop
 
 
@@ -124,7 +126,7 @@ onShow:function(){
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+   
   },
 
   
